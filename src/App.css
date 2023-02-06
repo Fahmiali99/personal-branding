@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light-mode-navbar {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #fcfcff,
+    #f7faff,
+    #f2f8ff,
+    #ebf7ff,
+    #e7f5ff,
+    #e2f4ff,
+    #def2ff,
+    #ddefff,
+    #dfebff,
+    #e2e6ff,
+    #e8e1ff
+  );
+  color: #000;
+  transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark-mode-navbar {
+  background-image: linear-gradient(
+    to right bottom,
+    #182c4a,
+    #172844,
+    #15243e,
+    #142038,
+    #121c32,
+    #121c32,
+    #121c32,
+    #121c32,
+    #142038,
+    #15243e,
+    #172844,
+    #182c4a
+  );
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light-mode {
+  background-image: linear-gradient(
+    to top,
+    #ffffff,
+    #fcfcff,
+    #f7faff,
+    #f2f8ff,
+    #ebf7ff,
+    #e7f5ff,
+    #e2f4ff,
+    #def2ff,
+    #ddefff,
+    #dfebff,
+    #e2e6ff,
+    #e8e1ff
+  );
+  color: #000;
+  transition: all 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dark-mode {
+  background-image: linear-gradient(
+    to right top,
+    #182c4a,
+    #172844,
+    #15243e,
+    #142038,
+    #121c32,
+    #121c32,
+    #121c32,
+    #121c32,
+    #142038,
+    #15243e,
+    #172844,
+    #182c4a
+  );
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active {
+  color: #3b82f6;
 }
+
+.link-underline {
+  border-bottom-width: 0;
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
+/* -------- NOT FOUND --------- */
