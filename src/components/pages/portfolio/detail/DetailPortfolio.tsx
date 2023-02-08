@@ -21,7 +21,7 @@ function DetailPortfolio({
     <div
       className={`${
         bright
-          ? "border border-gray-700 rounded-lg shadow-md"
+          ? "border border-gray-700 rounded-lg shadow-md "
           : "border border-gray-200 rounded-lg shadow-md"
       }`}
     >
