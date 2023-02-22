@@ -60,11 +60,11 @@ export const programming = [
     title: "Angular JS",
     Icons: DiAngularSimple,
   },
-  {
-    id: 10,
-    title: "Vue JS",
-    Icons: FaVuejs,
-  },
+  // {
+  //   id: 10,
+  //   title: "Vue JS",
+  //   Icons: FaVuejs,
+  // },
   {
     id: 11,
     title: "CSS",
