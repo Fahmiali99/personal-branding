@@ -94,12 +94,10 @@ function About({ bright }: AboutProps) {
                           <p>{item.title}</p>
                           <p className=" mx-2">-</p>
                           <span>
-                            <button>
-                              <div>
-                                <p className="underline text-base md:text-lg">
-                                  {substring}
-                                </p>
-                              </div>
+                            <button onClick={() => window.open(item.href)}>
+                              <p className="underline text-base md:text-lg">
+                                {substring}
+                              </p>
                             </button>
                           </span>
                         </div>
