@@ -9,12 +9,14 @@ interface NavbarProps {
   buttonBright: () => void;
   bright: boolean;
   navbar: boolean;
+  dropdownRef: any;
 }
 function NavigationBar({
   toggleMenu,
   buttonBright,
   bright,
   navbar,
+  dropdownRef,
 }: NavbarProps) {
   const [scrollPos, setScrollPos] = useState(0);
   useEffect(() => {
@@ -44,7 +46,10 @@ function NavigationBar({
             }}`
       }`}
     >
-      <div className="container mx-auto   px-2 sm:px-0 py-2.5 dark:bg-gray-900">
+      <div
+        ref={dropdownRef}
+        className="container mx-auto   px-2 sm:px-0 py-2.5 dark:bg-gray-900"
+      >
         <div className=" lg:mx-64  flex flex-wrap items-center justify-between ">
           <a href="/" className="flex items-center">
             <img

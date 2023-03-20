@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 
 import { Route, Routes } from "react-router-dom";
@@ -14,6 +14,7 @@ import Navbar from "./components/common/Navbar";
 function App() {
   const [navbar, setNavbar] = useState(false);
   const [bright, setBright] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   function toggleMenu() {
     setNavbar(!navbar);
@@ -32,6 +33,23 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent): void {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setNavbar(false);
+      }
+    }
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
+
   return (
     <div>
       <div className={`${bright ? "dark-mode " : "light-mode"}`}>
@@ -42,6 +60,7 @@ function App() {
               buttonBright={buttonBright}
               bright={bright}
               navbar={navbar}
+              dropdownRef={dropdownRef}
             />
             <Routes>
               <Route path="*" element={<NotFound bright={bright} />} />

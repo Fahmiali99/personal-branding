@@ -12,8 +12,6 @@ import {
   DiBootstrap,
 } from "react-icons/di";
 
-import { FaVuejs } from "react-icons/fa";
-
 export const programming = [
   {
     id: 1,
@@ -60,11 +58,7 @@ export const programming = [
     title: "Angular JS",
     Icons: DiAngularSimple,
   },
-  // {
-  //   id: 10,
-  //   title: "Vue JS",
-  //   Icons: FaVuejs,
-  // },
+
   {
     id: 11,
     title: "CSS",
