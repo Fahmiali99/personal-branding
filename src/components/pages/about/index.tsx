@@ -41,14 +41,10 @@ function About({ bright }: AboutProps) {
             const subAbout = item.about;
             return (
               <div key={idx}>
-                <div className=" flex justify-center pt-5">
+                <div className=" flex justify-center py-5">
                   <img src={fahmi} className=" w-2/5  md:w-1/6  " alt="" />
                 </div>
-                <div className=" flex justify-center py-5">
-                  {/* <h1 className=" font-medium text-3xl sm:text-3xl">
-                    {item.name}
-                  </h1> */}
-                </div>
+
                 <div>
                   <h1 className="text-2xl sm:text-3xl font-medium">
                     {item.title}
