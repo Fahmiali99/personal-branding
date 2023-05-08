@@ -16,9 +16,9 @@ import iot from "../../../assets/image/portfolio/iot.png";
 import projectfa from "../../../assets/image/portfolio/projectfa.png";
 import covid from "../../../assets/image/portfolio/covid.png";
 import sip from "../../../assets/image/portfolio/sip.png";
+import spotifyv2 from "../../../assets/image/portfolio/spotifyv2.png";
 export const data = [
   {
-    id: 1,
     title: "Botnet Website",
     story:
       "A botnet is a personal branding website for organizations, with the goal of making the organization know.",
@@ -44,7 +44,6 @@ export const data = [
     ],
   },
   {
-    id: 2,
     title: "Widdu Service",
     story:
       "Widdu Service is an application that provides coding, vector, and logo services.",
@@ -70,7 +69,6 @@ export const data = [
     ],
   },
   {
-    id: 3,
     title: "SDN 1 Watukebo",
     story:
       "SDN 1 Watukebo is a company profile website for online registration and information.",
@@ -96,7 +94,6 @@ export const data = [
     ],
   },
   {
-    id: 4,
     title: "Booklogia",
     story:
       "A book review platform that serves as a gathering place for book enthusiasts seeking new readings for their collections.",
@@ -122,7 +119,6 @@ export const data = [
     ],
   },
   {
-    id: 5,
     title: "Spotify Playlist",
     story:
       "This application adds a list of favorite songs by utilizing the Spotify API documentation.",
@@ -148,7 +144,6 @@ export const data = [
     ],
   },
   {
-    id: 6,
     title: "Weddingly",
     story:
       "With Weddingly, you can discover a more intelligent way to plan your dream wedding using simple and modern.",
@@ -174,7 +169,6 @@ export const data = [
     ],
   },
   {
-    id: 7,
     title: "SIPP Kota Batu",
     story:
       "This project is a collaboration between Social Economic Accelerator Lab (SEAL) and Dinas Lingkungan Hidup Kota Batu",
@@ -200,7 +194,31 @@ export const data = [
     ],
   },
   {
-    id: 8,
+    title: "Spotify Clone",
+    story:
+      "This Spotify Clone has been integrated with Spotify Developer, with a display that is identical to the original Spotify.",
+    href: "https://projectfa.app/",
+    image: spotifyv2,
+    technology: [
+      {
+        id: 1,
+        title: "ReactJS",
+      },
+      {
+        id: 2,
+        title: "JavaScript",
+      },
+      {
+        id: 3,
+        title: "Redux",
+      },
+      {
+        id: 4,
+        title: "TailwindCSS",
+      },
+    ],
+  },
+  {
     title: "Widdu Service Design",
     story:
       "Widdu Service is an application that provides coding, vector, and logo services.",
@@ -219,7 +237,6 @@ export const data = [
   },
 
   {
-    id: 9,
     title: "Upreal",
     story:
       "Upreal provides many services that can be chosen according to the customer's needs.",
@@ -245,7 +262,6 @@ export const data = [
     ],
   },
   {
-    id: 10,
     title: "Calculator - Web",
     story:
       "This application is a full-desktop digital calculator with a full-desktop display to enhance user comfort.",
@@ -267,7 +283,6 @@ export const data = [
     ],
   },
   {
-    id: 11,
     title: "Todo List",
     story:
       "Todo list is a simple website-based task recording application. Users can add and remove tasks.",
@@ -293,7 +308,6 @@ export const data = [
     ],
   },
   {
-    id: 12,
     title: "Leaf Classification - AI",
     story:
       "Leaf Classification is an application built with artificial intelligence for detecting jackfruit and blimbing wuluh leaves.",
@@ -315,7 +329,6 @@ export const data = [
     ],
   },
   {
-    id: 13,
     title: "Food Store",
     story:
       "With Weddingly, you can discover a more intelligent way to plan your dream wedding using simple and modern.",
@@ -337,7 +350,6 @@ export const data = [
     ],
   },
   {
-    id: 14,
     title: "Bookshelf",
     story:
       "This is a simple book shelf application, so that users can input books, search, and filter.",
@@ -359,7 +371,6 @@ export const data = [
     ],
   },
   {
-    id: 15,
     title: "Roll Ball - Game",
     story:
       "Roll ball is a game built using Unity with a 3D camera, allowing users to experience the environment.",
@@ -377,7 +388,6 @@ export const data = [
     ],
   },
   {
-    id: 16,
     title: "War Heroes",
     story:
       "War Heroes is a simple game built using basic Python, where users can battle against robots.",
@@ -391,7 +401,6 @@ export const data = [
     ],
   },
   {
-    id: 17,
     title: "IOT Project",
     story:
       "This project contains a collection of simple to intermediate IOT projects, some of which use mobile devices.",
@@ -409,7 +418,6 @@ export const data = [
     ],
   },
   {
-    id: 18,
     title: "Covid Applikasi Desktop",
     story:
       "This application is built using JFrame with a desktop interface, using the Covid-19 case study.",
@@ -423,7 +431,6 @@ export const data = [
     ],
   },
   {
-    id: 19,
     title: "Personal Blog - WordPress",
     story:
       "This project is built using WordPress, with blog content about traveling in Indonesia.",
