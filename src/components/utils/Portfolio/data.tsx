@@ -197,7 +197,7 @@ export const data = [
     title: "Spotify Clone",
     story:
       "This Spotify Clone has been integrated with Spotify Developer, with a display that is identical to the original Spotify.",
-    href: "https://projectfa.app/",
+    href: "https://github.com/Fahmiali99/Spotify",
     image: spotifyv2,
     technology: [
       {
