@@ -245,19 +245,16 @@ export const data = [
     technology: [
       {
         id: 1,
-        title: "React JS",
+        title: "Next JS",
       },
       {
         id: 2,
         title: "Tailwind CSS",
       },
+
       {
         id: 3,
-        title: "Daisyui",
-      },
-      {
-        id: 4,
-        title: "JavaScript",
+        title: "TypeScript",
       },
     ],
   },
