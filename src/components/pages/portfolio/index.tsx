@@ -54,28 +54,36 @@ function Portfolio({ bright }: PortfolioProps) {
               </div>
             </div>
           </div>
-          <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 my-5 ">
-            {currentTableData.map((item, idx) => {
-              const technology = item.technology;
+          <div>
+            {currentTableData.length ? (
+              <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 my-5 ">
+                {currentTableData.map((item, idx) => {
+                  const technology = item.technology;
 
-              const setLength = item.story;
-              let substring = setLength.substring(0, 108);
-              const maxLength = 107;
-              if (substring.length > maxLength) {
-                substring = substring.substring(0, maxLength) + "...";
-              }
-              return (
-                <DetailPortfolio
-                  key={idx}
-                  title={item.title}
-                  href={item.href}
-                  image={item.image}
-                  subString={substring}
-                  technology={technology}
-                  bright={bright}
-                />
-              );
-            })}
+                  const setLength = item.story;
+                  let substring = setLength.substring(0, 108);
+                  const maxLength = 107;
+                  if (substring.length > maxLength) {
+                    substring = substring.substring(0, maxLength) + "...";
+                  }
+                  return (
+                    <DetailPortfolio
+                      key={idx}
+                      title={item.title}
+                      href={item.href}
+                      image={item.image}
+                      subString={substring}
+                      technology={technology}
+                      bright={bright}
+                    />
+                  );
+                })}
+              </div>
+            ) : (
+              <div className=" min-h-[calc(57vh-49px)] xl:min-h-[calc(53vh-3rem)] flex items-center justify-center ">
+                <h1 className="text-center">Portfolio not available</h1>
+              </div>
+            )}
           </div>
           <Pagination
             currentPage={currentPage}
