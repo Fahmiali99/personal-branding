@@ -17,7 +17,33 @@ import projectfa from "../../../assets/image/portfolio/projectfa.png";
 import covid from "../../../assets/image/portfolio/covid.png";
 import sip from "../../../assets/image/portfolio/sip.png";
 import spotifyv2 from "../../../assets/image/portfolio/spotifyv2.png";
+import netflix from "../../../assets/image/portfolio/netflix.png";
 export const data = [
+  {
+    title: "Moviely",
+    story:
+      "A Netflix clone is an application that utilizes the API from TMDB TV and has a design similar to the original Netflix.",
+    href: "https://github.com/Fahmiali99/moviely-app",
+    image: netflix,
+    technology: [
+      {
+        id: 1,
+        title: "NextJS",
+      },
+      {
+        id: 2,
+        title: "TypeScript",
+      },
+      {
+        id: 3,
+        title: "Redux",
+      },
+      {
+        id: 4,
+        title: "TailwindCSS",
+      },
+    ],
+  },
   {
     title: "Botnet Website",
     story:
@@ -251,7 +277,6 @@ export const data = [
         id: 2,
         title: "Tailwind CSS",
       },
-
       {
         id: 3,
         title: "TypeScript",
