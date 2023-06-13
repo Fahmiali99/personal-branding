@@ -45,6 +45,31 @@ export const data = [
     ],
   },
   {
+    title: "Spotify Clone",
+    story:
+      "This Spotify Clone has been integrated with Spotify Developer, with a display that is identical to the original Spotify.",
+    href: "https://github.com/Fahmiali99/Spotify",
+    image: spotifyv2,
+    technology: [
+      {
+        id: 1,
+        title: "ReactJS",
+      },
+      {
+        id: 2,
+        title: "JavaScript",
+      },
+      {
+        id: 3,
+        title: "Redux",
+      },
+      {
+        id: 4,
+        title: "TailwindCSS",
+      },
+    ],
+  },
+  {
     title: "Botnet Website",
     story:
       "A botnet is a personal branding website for organizations, with the goal of making the organization know.",
@@ -216,31 +241,6 @@ export const data = [
       {
         id: 2,
         title: "Tailwind CSS",
-      },
-    ],
-  },
-  {
-    title: "Spotify Clone",
-    story:
-      "This Spotify Clone has been integrated with Spotify Developer, with a display that is identical to the original Spotify.",
-    href: "https://github.com/Fahmiali99/Spotify",
-    image: spotifyv2,
-    technology: [
-      {
-        id: 1,
-        title: "ReactJS",
-      },
-      {
-        id: 2,
-        title: "JavaScript",
-      },
-      {
-        id: 3,
-        title: "Redux",
-      },
-      {
-        id: 4,
-        title: "TailwindCSS",
       },
     ],
   },
