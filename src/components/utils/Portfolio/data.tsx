@@ -27,19 +27,15 @@ export const data = [
     image: netflix,
     technology: [
       {
-        id: 1,
         title: "NextJS",
       },
       {
-        id: 2,
         title: "TypeScript",
       },
       {
-        id: 3,
         title: "Redux",
       },
       {
-        id: 4,
         title: "TailwindCSS",
       },
     ],
@@ -52,19 +48,15 @@ export const data = [
     image: spotifyv2,
     technology: [
       {
-        id: 1,
         title: "ReactJS",
       },
       {
-        id: 2,
         title: "JavaScript",
       },
       {
-        id: 3,
         title: "Redux",
       },
       {
-        id: 4,
         title: "TailwindCSS",
       },
     ],
@@ -77,19 +69,15 @@ export const data = [
     image: botnet,
     technology: [
       {
-        id: 1,
         title: "HTML",
       },
       {
-        id: 2,
         title: "CSS",
       },
       {
-        id: 3,
         title: "Bootstrap",
       },
       {
-        id: 4,
         title: "Laravel Mix",
       },
     ],
@@ -102,19 +90,15 @@ export const data = [
     image: widdu,
     technology: [
       {
-        id: 1,
         title: "HTML",
       },
       {
-        id: 2,
         title: "CSS",
       },
       {
-        id: 3,
         title: "Bootstrap",
       },
       {
-        id: 4,
         title: "Laravel",
       },
     ],
@@ -127,19 +111,15 @@ export const data = [
     image: sekolah,
     technology: [
       {
-        id: 1,
         title: "HTML",
       },
       {
-        id: 2,
         title: "CSS",
       },
       {
-        id: 3,
         title: "Bootstrap",
       },
       {
-        id: 4,
         title: "Laravel",
       },
     ],
@@ -152,19 +132,15 @@ export const data = [
     image: booklogia,
     technology: [
       {
-        id: 1,
         title: "Bootstrap",
       },
       {
-        id: 2,
         title: "Redux",
       },
       {
-        id: 3,
         title: "JavaScript",
       },
       {
-        id: 4,
         title: "React JS",
       },
     ],
@@ -177,19 +153,15 @@ export const data = [
     image: spotify,
     technology: [
       {
-        id: 1,
         title: "Bootstrap",
       },
       {
-        id: 2,
         title: "Redux",
       },
       {
-        id: 3,
         title: "TypeScript",
       },
       {
-        id: 4,
         title: "React JS",
       },
     ],
@@ -202,19 +174,15 @@ export const data = [
     image: weddingly,
     technology: [
       {
-        id: 1,
         title: "Tailwind CSS",
       },
       {
-        id: 2,
         title: "Daisyui",
       },
       {
-        id: 3,
         title: "TypeScript",
       },
       {
-        id: 4,
         title: "Next JS",
       },
     ],
@@ -227,19 +195,15 @@ export const data = [
     image: sip,
     technology: [
       {
-        id: 1,
         title: "Next JS",
       },
       {
-        id: 2,
         title: "TypeScript",
       },
       {
-        id: 2,
         title: "Axios",
       },
       {
-        id: 2,
         title: "Tailwind CSS",
       },
     ],
@@ -252,11 +216,9 @@ export const data = [
     image: widdu,
     technology: [
       {
-        id: 1,
         title: "UI/UX",
       },
       {
-        id: 2,
         title: "Figma",
       },
     ],
@@ -270,15 +232,12 @@ export const data = [
     image: upreal,
     technology: [
       {
-        id: 1,
         title: "Next JS",
       },
       {
-        id: 2,
         title: "Tailwind CSS",
       },
       {
-        id: 3,
         title: "TypeScript",
       },
     ],
@@ -291,15 +250,12 @@ export const data = [
     image: calculator,
     technology: [
       {
-        id: 1,
         title: "HTML",
       },
       {
-        id: 2,
         title: "JavaScript",
       },
       {
-        id: 3,
         title: "CSS",
       },
     ],
@@ -312,19 +268,15 @@ export const data = [
     image: todolist,
     technology: [
       {
-        id: 1,
         title: "React JS",
       },
       {
-        id: 2,
         title: "Tailwind CSS",
       },
       {
-        id: 3,
         title: "JavaScript",
       },
       {
-        id: 3,
         title: "CSS",
       },
     ],
@@ -337,15 +289,12 @@ export const data = [
     image: leaf,
     technology: [
       {
-        id: 1,
         title: "HTML",
       },
       {
-        id: 2,
         title: "Tailwind CSS",
       },
       {
-        id: 3,
         title: "Python",
       },
     ],
@@ -358,15 +307,12 @@ export const data = [
     image: food,
     technology: [
       {
-        id: 1,
         title: "HTML",
       },
       {
-        id: 2,
         title: "CSS",
       },
       {
-        id: 3,
         title: "JavaScript",
       },
     ],
@@ -379,15 +325,12 @@ export const data = [
     image: bookshelf,
     technology: [
       {
-        id: 1,
         title: "HTML",
       },
       {
-        id: 2,
         title: "JavaScript",
       },
       {
-        id: 2,
         title: "CSS",
       },
     ],
@@ -400,11 +343,9 @@ export const data = [
     image: rollball,
     technology: [
       {
-        id: 1,
         title: "Unity",
       },
       {
-        id: 2,
         title: "C#",
       },
     ],
@@ -417,7 +358,6 @@ export const data = [
     image: war,
     technology: [
       {
-        id: 1,
         title: "Python",
       },
     ],
@@ -430,11 +370,9 @@ export const data = [
     image: iot,
     technology: [
       {
-        id: 1,
         title: "Arduino",
       },
       {
-        id: 2,
         title: "Proteus",
       },
     ],
@@ -447,7 +385,6 @@ export const data = [
     image: covid,
     technology: [
       {
-        id: 1,
         title: "Java",
       },
     ],
@@ -460,11 +397,9 @@ export const data = [
     image: projectfa,
     technology: [
       {
-        id: 1,
         title: "WordPress",
       },
       {
-        id: 2,
         title: "Elementor",
       },
     ],
