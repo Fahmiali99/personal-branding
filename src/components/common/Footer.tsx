@@ -7,14 +7,12 @@ function Footer() {
       className="w-full grid grid-cols-1 xl:grid-cols-2 px-2 sm:px-0 py-2.5"
       style={{ height: "48px" }}
     >
-      <div>
-        <span className="hidden xl:block ">
-          © 2022
-          <a href="/" className="hover:underline">
-            Fahmi Ali Husni
-          </a>
-          . All Rights Reserved.
-        </span>
+      <div className="hidden xl:block ">
+        © 2022
+        <a href="/" className="hover:underline">
+          Fahmi Ali Husni
+        </a>
+        . All Rights Reserved.
       </div>
       <div className="flex justify-center xl:justify-end">
         {data.map((item, idx) => {
