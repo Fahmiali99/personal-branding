@@ -10,7 +10,7 @@ function Footer() {
           <div className="w-full ">
             <span className="hidden xl:block ">
               © 2022
-              <a href="https://google.com/" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Fahmi Ali Husni
               </a>
               . All Rights Reserved.
@@ -20,18 +20,13 @@ function Footer() {
             {data.map((item, idx) => {
               return (
                 <div key={idx} className="mx-2">
-                  <ul>
-                    <li>
-                      <button onClick={() => window.open(item.href)}>
-                        <div className="flex items-center">
-                          <span className="mx-2">
-                            <item.Icons />
-                          </span>
-                          <p>{item.title}</p>
-                        </div>
-                      </button>
-                    </li>
-                  </ul>
+                  <button
+                    onClick={() => window.open(item.href)}
+                    className="flex items-center"
+                  >
+                    <item.Icons className="mx-2" />
+                    <p>{item.title}</p>
+                  </button>
                 </div>
               );
             })}
