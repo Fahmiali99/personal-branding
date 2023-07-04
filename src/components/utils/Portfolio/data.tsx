@@ -21,6 +21,7 @@ import netflix from "../../../assets/image/portfolio/netflix.png";
 export const data = [
   {
     title: "Moviely",
+    date: "May, 01, 2023",
     story:
       "A Netflix clone is an application that utilizes the API from TMDB TV and has a design similar to the original Netflix.",
     href: "https://github.com/Fahmiali99/moviely-app",
