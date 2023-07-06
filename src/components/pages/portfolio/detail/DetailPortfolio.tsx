@@ -7,6 +7,7 @@ interface DetailPortfolioProps {
   image: string;
   bright: boolean;
   technology: any;
+  date: string;
 }
 
 function DetailPortfolio({
@@ -16,6 +17,7 @@ function DetailPortfolio({
   image,
   bright,
   technology,
+  date,
 }: DetailPortfolioProps) {
   return (
     <div
@@ -28,6 +30,17 @@ function DetailPortfolio({
       <div className={`w-full  dark:bg-gray-800 dark:border-gray-700 `}>
         <button className="text-left" onClick={() => window.open(href)}>
           <div>
+            <div className="relative right-3 top-3 ">
+              <div
+                className={
+                  bright
+                    ? "absolute right-0 bg-slate-800 px-2 rounded-md text-xs "
+                    : "absolute right-0 bg-slate-50 px-2 rounded-md text-xs"
+                }
+              >
+                {date}
+              </div>
+            </div>
             <img className="rounded-t-lg " src={image} alt="" />
           </div>
           <div

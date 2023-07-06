@@ -70,6 +70,7 @@ function Portfolio({ bright }: PortfolioProps) {
                   title={item.title}
                   href={item.href}
                   image={item.image}
+                  date={item.date}
                   subString={substring}
                   technology={technology}
                   bright={bright}
