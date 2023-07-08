@@ -9,7 +9,6 @@ import calculator from "../../../assets/image/portfolio/calculator.png";
 import todolist from "../../../assets/image/portfolio/todolist.png";
 import leaf from "../../../assets/image/portfolio/leaf.png";
 import food from "../../../assets/image/portfolio/food.png";
-import bookshelf from "../../../assets/image/portfolio/bookshelf.png";
 import rollball from "../../../assets/image/portfolio/rollball.png";
 import war from "../../../assets/image/portfolio/war.png";
 import iot from "../../../assets/image/portfolio/iot.png";
@@ -329,25 +328,6 @@ export const data = [
       },
       {
         title: "JavaScript",
-      },
-    ],
-  },
-  {
-    title: "Bookshelf",
-    date: "Dec, 01, 2020",
-    story:
-      "This is a simple book shelf application, so that users can input books, search, and filter.",
-    href: "https://bookshelf-six.vercel.app/",
-    image: bookshelf,
-    technology: [
-      {
-        title: "HTML",
-      },
-      {
-        title: "JavaScript",
-      },
-      {
-        title: "CSS",
       },
     ],
   },
