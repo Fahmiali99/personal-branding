@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { contact } from "../../utils/About/contact";
 import { about } from "../../utils/About/about";
 import fahmi from "../../../assets/image/me.png";
@@ -12,6 +12,10 @@ interface AboutProps {
 }
 
 function About({ bright }: AboutProps) {
+  useEffect(() => {
+    document.title = 'Hi, Fahmi | About';
+  }, []);
+
   const tabMenu = [
     {
       id: 1,

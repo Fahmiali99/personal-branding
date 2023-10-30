@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import Notfound from "../../assets/image/notfound.svg";
 
 interface NotFoundProps {
@@ -6,6 +6,9 @@ interface NotFoundProps {
 }
 
 function NotFound({ bright }: NotFoundProps) {
+  useEffect(() => {
+    document.title = 'Hi, Fahmi | 404';
+  }, []);
   return (
     <div
       className={` ${
@@ -16,7 +19,7 @@ function NotFound({ bright }: NotFoundProps) {
     >
       <div className=" text-center">
         <div className="flex justify-center">
-          <img src={Notfound} width="400px" alt="NotFound" />
+          <img src={Notfound} width="400px" height="400px" alt="NotFound" />
         </div>
         <p className=" text-2xl tracking-tight font-bold md:text-4xl ">
           Sorry, the page is not available!
