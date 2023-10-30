@@ -1,7 +1,3 @@
-import React from "react";
-
-function Up() {
-  return <div className=" pt-20 "></div>;
+export default function Up() {
+  return <div className="pt-20 "/>
 }
-
-export default Up;

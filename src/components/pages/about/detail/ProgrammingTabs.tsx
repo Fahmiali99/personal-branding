@@ -1,6 +1,6 @@
 import React from "react";
 import { programming } from "../../../utils/About/programming";
-import Programming from "../components/Programming";
+const Programming = React.lazy(() => import('../components/Programming'));
 
 interface AboutDetailProps {
   bright: boolean;

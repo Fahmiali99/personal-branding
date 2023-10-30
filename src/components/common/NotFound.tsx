@@ -1,5 +1,5 @@
 import React from "react";
-import Notfound from "../../assets/image/notfound.png";
+import Notfound from "../../assets/image/notfound.svg";
 
 interface NotFoundProps {
   bright: boolean;
@@ -16,7 +16,7 @@ function NotFound({ bright }: NotFoundProps) {
     >
       <div className=" text-center">
         <div className="flex justify-center">
-          <img src={Notfound} width={400} alt="" />
+          <img src={Notfound} width="400px" alt="NotFound" />
         </div>
         <p className=" text-2xl tracking-tight font-bold md:text-4xl ">
           Sorry, the page is not available!

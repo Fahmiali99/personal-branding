@@ -1,6 +1,6 @@
 import React from "react";
 import { design } from "../../../utils/About/design";
-import SoftSkill from "../components/SoftSkill";
+const SoftSkill = React.lazy(() => import('../components/SoftSkill'));
 
 interface AboutDetailProps {
   bright: boolean;
