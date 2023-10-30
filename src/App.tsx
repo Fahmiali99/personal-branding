@@ -1,15 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, Suspense } from "react";
 import "./App.css";
-
 import { Route, Routes } from "react-router-dom";
-
-import Footer from "./components/common/Footer";
-import NotFound from "./components/common/NotFound";
-import Home from "./components/pages/home";
-import About from "./components/pages/about";
-import Portfolio from "./components/pages/portfolio";
-import Resume from "./components/pages/resume";
-import Navbar from "./components/common/Navbar";
+const Navbar = React.lazy(() => import('./components/common/Navbar'));
+const Portfolio = React.lazy(() => import('./components/pages/portfolio'));
+const About = React.lazy(() => import('./components/pages/about'));
+const Home = React.lazy(() => import('./components/pages/home'));
+const NotFound = React.lazy(() => import('./components/common/NotFound'));
+const Footer = React.lazy(() => import('./components/common/Footer'));
 
 function App() {
   const [navbar, setNavbar] = useState(false);
@@ -42,16 +39,14 @@ function App() {
         setNavbar(false);
       }
     }
-    // Bind the event listener
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      // Unbind the event listener on clean up
       document.removeEventListener("mousedown", handleClickOutside);
     };
   });
 
   return (
-    <div>
+    <Suspense fallback={<div>Loading...</div>}>
       <div className={`${bright ? "dark-mode " : "light-mode"}`}>
         <div className="h-auto sm:h-auto container mx-auto">
           <div className="lg:mx-64">
@@ -70,13 +65,12 @@ function App() {
                 path="/portfolio"
                 element={<Portfolio bright={bright} />}
               />
-              <Route path="/resume" element={<Resume />} />
             </Routes>
             <Footer />
           </div>
         </div>
       </div>
-    </div>
+    </Suspense>
   );
 }
 

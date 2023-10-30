@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useState } from "react";
 
 interface TabData {
@@ -15,13 +15,13 @@ interface NavbarTabsProps {
 function NavbarTabs({ data }: NavbarTabsProps) {
   const [openTab, setOpenTab] = useState(1);
   return (
-    <div>
+    <Fragment>
       <div className="flex flex-wrap">
         <div className="w-full justify-center ">
           <div>
             <div className="flex space-x-7">
               {data?.map((menu, idx) => (
-                <div key={idx}>
+                <Fragment key={idx}>
                   <div className="-mb-px last:mr-0 flex-auto text-center">
                     <a
                       className={
@@ -36,7 +36,6 @@ function NavbarTabs({ data }: NavbarTabsProps) {
                       }}
                       data-toggle="tab"
                       href="#link1"
-                      role="tablist"
                     >
                       <div
                         className={`text-sm hover:text-primary-500  ${
@@ -49,7 +48,7 @@ function NavbarTabs({ data }: NavbarTabsProps) {
                       </div>
                     </a>
                   </div>
-                </div>
+                </Fragment>
               ))}
             </div>
           </div>
@@ -66,7 +65,7 @@ function NavbarTabs({ data }: NavbarTabsProps) {
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
 
