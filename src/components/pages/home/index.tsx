@@ -1,10 +1,13 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 interface HomeProps {
   bright: boolean;
 }
 function Home({ bright }: HomeProps) {
+  useEffect(() => {
+    document.title = 'Hi, Fahmi | Home';
+  }, []);
   return (
     <Fragment>
       <div className="h-full grid items-center min-h-[calc(100vh-3rem)]">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 interface SearchingProps {
   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
@@ -8,7 +8,7 @@ interface SearchingProps {
 
 function Searching({ handleSubmit, filter, handleFilter }: SearchingProps) {
   return (
-    <div>
+    <Fragment>
       <form className="flex items-center" onSubmit={handleSubmit}>
         <label htmlFor="voice-search" className="sr-only">
           Search
@@ -40,7 +40,7 @@ function Searching({ handleSubmit, filter, handleFilter }: SearchingProps) {
           />
         </div>
       </form>
-    </div>
+    </Fragment>
   );
 }
 

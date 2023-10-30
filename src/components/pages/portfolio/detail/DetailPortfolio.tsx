@@ -1,4 +1,4 @@
-import React from "react";
+import { Fragment } from "react";
 
 interface DetailPortfolioProps {
   title: string;
@@ -20,62 +20,69 @@ function DetailPortfolio({
   date,
 }: DetailPortfolioProps) {
   return (
-    <div
-      className={`${
-        bright
-          ? "border border-gray-700 rounded-lg shadow-md "
-          : "border border-gray-200 rounded-lg shadow-md"
-      }`}
-    >
-      <div className={`w-full  dark:bg-gray-800 dark:border-gray-700 `}>
-        <button className="text-left" onClick={() => window.open(href)}>
-          <div>
-            <div className="relative right-3 top-3 ">
-              <div
-                className={
-                  bright
-                    ? "absolute right-0 bg-slate-800 px-2 rounded-md text-xs "
-                    : "absolute right-0 bg-slate-50 px-2 rounded-md text-xs"
-                }
-              >
-                {date}
+    <Fragment>
+      <div
+        className={`${
+          bright
+            ? "border border-gray-700 rounded-lg shadow-md bg-slate-800"
+            : "border border-gray-200 rounded-lg shadow-md bg-white"
+        }`}
+      >
+        <div className={`w-full `}>
+          <button className="text-left" onClick={() => window.open(href)}>
+            <div>
+              <div className="relative right-3 top-3 ">
+                <div
+                  className={
+                    bright
+                      ? "absolute right-0 bg-slate-800 px-2 rounded-md text-xs "
+                      : "absolute right-0 bg-slate-50 px-2 rounded-md text-xs"
+                  }
+                >
+                  {date}
+                </div>
+              </div>
+              <img className="rounded-t-lg " 
+                  src={image} 
+                  alt={title}
+                  width={900}
+                  height={600}
+              />
+            </div>
+            <div
+              className={`${
+                bright
+                  ? " bg-slate-800 text-white rounded rounded-b-lg"
+                  : "bg-white rounded rounded-b-lg"
+              }`}
+            >
+              <div className="p-5 ">
+                <h5 className="mb-2 text-xl font-bold tracking-tight">
+                  {title}
+                </h5>
+
+                <p className="mb-3 font-normal  dark:text-gray-400">
+                  {subString}
+                </p>
+
+                <div className="flex">
+                  {technology.map((item: any, idx: number) => {
+                    return (
+                      <div
+                        key={idx}
+                        className=" mr-1 py-0.5 rounded border shadow-md ..."
+                      >
+                        <p className="mx-2 text-xs">{item.title}</p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-            <img className="rounded-t-lg " src={image} alt="" />
-          </div>
-          <div
-            className={`${
-              bright
-                ? " bg-slate-800 text-white rounded rounded-b-lg"
-                : "bg-white rounded rounded-b-lg"
-            }`}
-          >
-            <div className="p-5 ">
-              <h5 className="mb-2 text-xl font-bold tracking-tight  dark:text-white">
-                {title}
-              </h5>
-
-              <p className="mb-3 font-normal  dark:text-gray-400">
-                {subString}
-              </p>
-
-              <div className="flex">
-                {technology.map((item: any, idx: number) => {
-                  return (
-                    <div
-                      key={idx}
-                      className=" mr-1 py-0.5 rounded border shadow-md ..."
-                    >
-                      <p className="mx-2 text-xs">{item.title}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
 

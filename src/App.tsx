@@ -46,7 +46,7 @@ function App() {
   });
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense >
       <div className={`${bright ? "dark-mode " : "light-mode"}`}>
         <div className="h-auto sm:h-auto container mx-auto">
           <div className="lg:mx-64">
