@@ -1,13 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { contact } from "../../utils/About/contact";
 import { about } from "../../utils/About/about";
-import Up from "../../common/Up";
 import fahmi from "../../../assets/image/me.png";
-import NavbarTabs from "../../common/NavbarTabs";
-import ProgrammingTabs from "./detail/ProgrammingTabs";
-import DesignTabs from "./detail/DesignTabs";
-import AudioTabs from "./detail/AudioTabs";
-
+const Up = React.lazy(() => import('../../common/Up'));
+const NavbarTabs = React.lazy(() => import('../../common/NavbarTabs'));
+const ProgrammingTabs = React.lazy(() => import('./detail/ProgrammingTabs'));
+const DesignTabs = React.lazy(() => import('./detail/DesignTabs'));
+const AudioTabs = React.lazy(() => import('./detail/AudioTabs'));
 interface AboutProps {
   bright: any;
 }
@@ -32,17 +31,16 @@ function About({ bright }: AboutProps) {
   ];
 
   return (
-    <div>
+    <Fragment>
       <div className=" pb-4 w-full h-full min-h-[calc(100vh-3rem)] px-2 md:px-0">
         <Up />
-
         <div className="block items-center">
           {about.map((item, idx) => {
             const subAbout = item.about;
             return (
-              <div key={idx}>
+              <Fragment key={idx}>
                 <div className=" flex justify-center py-5">
-                  <img src={fahmi} className=" w-2/5  md:w-1/6  " alt="" />
+                  <img src={fahmi} className=" w-2/5  md:w-1/6" width="128px" height="191.51px" alt="fahmi" />
                 </div>
 
                 <div>
@@ -58,7 +56,7 @@ function About({ bright }: AboutProps) {
                     </div>
                   ))}
                 </div>
-              </div>
+              </Fragment>
             );
           })}
           <div className="skill pb-5">
@@ -70,7 +68,7 @@ function About({ bright }: AboutProps) {
             {contact.map((item, idx) => {
               const subContact = item.contact;
               return (
-                <div key={idx}>
+                <Fragment key={idx}>
                   <h1 className="text-2xl sm:text-3xl font-medium">
                     {item.title}
                   </h1>
@@ -86,27 +84,29 @@ function About({ bright }: AboutProps) {
                       }
 
                       return (
-                        <div key={idx} className="flex my-1">
-                          <p>{item.title}</p>
-                          <p className=" mx-2">-</p>
-                          <span>
-                            <button onClick={() => window.open(item.href)}>
-                              <p className="underline text-base md:text-lg">
-                                {substring}
-                              </p>
-                            </button>
-                          </span>
-                        </div>
+                        <Fragment key={idx}>
+                          <div className="flex my-1">
+                            <p>{item.title}</p>
+                            <p className=" mx-2">-</p>
+                            <span>
+                              <button onClick={() => window.open(item.href)}>
+                                <p className="underline text-base md:text-lg">
+                                  {substring}
+                                </p>
+                              </button>
+                            </span>
+                          </div>
+                        </Fragment>
                       );
                     })}
                   </div>
-                </div>
+                </Fragment>
               );
             })}
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
 export default About;

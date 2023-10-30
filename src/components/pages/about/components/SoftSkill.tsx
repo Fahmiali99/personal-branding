@@ -1,5 +1,3 @@
-import React from "react";
-
 interface CompAbout {
   title: string;
   icons: any;
