@@ -86,6 +86,7 @@ function NavigationBar({
 
               <button
                 onClick={toggleMenu}
+                aria-label="navbar button"
                 type="button"
                 className={
                   bright
