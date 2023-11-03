@@ -45,8 +45,8 @@ function DetailPortfolio({
               <img className="rounded-t-lg " 
                   src={image} 
                   alt={title}
-                  width={900}
-                  height={600}
+                  width="900px"
+                  height="600px"
               />
             </div>
             <div
