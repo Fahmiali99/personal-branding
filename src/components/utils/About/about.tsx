@@ -10,7 +10,7 @@ export const about = [
       },
       {
         subAbout:
-          "I really enjoy web programming, particularly as a frontend developer, using HTML, CSS, JavaScript, TypeScript, ReactJS, and NextJS. I have been involved with the Computer Science Student Association, in the field of information and technology, as an audio podcast editor and the Google Developer Student Clubs Community at Muhammadiyah University of Malang, which I join with the goal of expanding my knowledge and gaining experience.",
+          "I really enjoy web programming, particularly as a frontend developer, using HTML, CSS, JavaScript, TypeScriptx, Redux, ReactJS, and NextJS. I have been involved with the Computer Science Student Association, in the field of information and technology, as an audio podcast editor and the Google Developer Student Clubs Community at Muhammadiyah University of Malang, which I join with the goal of expanding my knowledge and gaining experience.",
       },
     ],
   },
