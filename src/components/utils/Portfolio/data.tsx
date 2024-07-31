@@ -18,6 +18,7 @@ import sip from "../../../assets/image/portfolio/sip.webp";
 import spotifyv2 from "../../../assets/image/portfolio/spotifyv2.webp";
 import netflix from "../../../assets/image/portfolio/netflix.webp";
 import smc from "../../../assets/image/portfolio/smc.webp"
+
 export const data = [
   {
     title: "Upreal",
