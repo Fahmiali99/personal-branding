@@ -17,7 +17,52 @@ import covid from "../../../assets/image/portfolio/covid.webp";
 import sip from "../../../assets/image/portfolio/sip.webp";
 import spotifyv2 from "../../../assets/image/portfolio/spotifyv2.webp";
 import netflix from "../../../assets/image/portfolio/netflix.webp";
+import smc from "../../../assets/image/portfolio/smc.webp"
 export const data = [
+  {
+    title: "Upreal",
+    date: "July, 01, 2024",
+    story:
+      "SMC is a place or a platform for music enthusiasts to explore and gain knowledge in the world of music.",
+    href: "https://sanggarmusikcenter.vercel.app/",
+    image: smc,
+    technology: [
+      {
+        title: "Next JS",
+      },
+      {
+        title: "Tailwind CSS",
+      },
+      {
+        title: "TypeScript",
+      },
+      {
+        title: "JSON",
+      },
+    ],
+  },
+  {
+    title: "SMC",
+    date: "Feb, 03, 2024",
+    story:
+      "Upreal provides many services that can be chosen according to the customer's needs.",
+    href: "https://upreal.vercel.app/",
+    image: upreal,
+    technology: [
+      {
+        title: "Next JS",
+      },
+      {
+        title: "Tailwind CSS",
+      },
+      {
+        title: "TypeScript",
+      },
+      {
+        title: "JSON",
+      },
+    ],
+  },
   {
     title: "Moviely",
     date: "May, 01, 2023",
@@ -229,26 +274,6 @@ export const data = [
       },
       {
         title: "Figma",
-      },
-    ],
-  },
-
-  {
-    title: "Upreal",
-    date: "Feb, 01, 2023",
-    story:
-      "Upreal provides many services that can be chosen according to the customer's needs.",
-    href: "https://upreal.vercel.app/",
-    image: upreal,
-    technology: [
-      {
-        title: "Next JS",
-      },
-      {
-        title: "Tailwind CSS",
-      },
-      {
-        title: "TypeScript",
       },
     ],
   },
